@@ -47,5 +47,17 @@
         "max-glare": 0.2
 	});
     </script>
+<script language="JavaScript">
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+$(document).keydown(function(e){
+    if(e.ctrlKey && (e.which === 83)){
+       e.preventDefault();
+       return false;
+    }
+});
+</script>
+
 </body>
 </html>
